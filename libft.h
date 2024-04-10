@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:00:17 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 15:06:35 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/10 16:08:44 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <limits.h>
-
-/* ************************************************************************** */
-/*                               Estructura                                   */
-/* ************************************************************************** */
 
 typedef struct s_list
 {
@@ -52,13 +48,17 @@ int		ft_memcmp(void const *s1, void const *s2, size_t n);
 /*                             String / Cadenas                               */
 /* ************************************************************************** */
 
+int		ft_atoi(const char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t maxlen);
-size_t	ft_strlen(char const *str);
+size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dest, char const *src, size_t n);
 size_t	ft_strlen(const char *s);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
+
 
 /* ************************************************************************** */
 /*                                 Listado                                    */
