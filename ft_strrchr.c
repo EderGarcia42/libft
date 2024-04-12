@@ -6,29 +6,20 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:00:47 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 16:08:47 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:24:53 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char	*last;
-	size_t		l;
+	size_t	i;
 
-	last = NULL;
-	l = 0;
-	while (s[l] != '\0')
-		l++;
-	while (l > 0)
-	{
-		if (s[l - 1] == c)
-		{
-			last = &s[l - 1];
-			break ;
-		}
-		l--;
-	}
-	return (last);
+	i = ft_strlen(s);
+	while (s[i] != (char)c && i > 0)
+		i--;
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
+	return (NULL);
 }

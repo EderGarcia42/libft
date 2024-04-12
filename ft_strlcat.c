@@ -6,11 +6,11 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:53:08 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 16:08:51 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:24:57 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

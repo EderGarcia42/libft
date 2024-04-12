@@ -6,11 +6,11 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:46:53 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 16:08:49 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:24:55 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

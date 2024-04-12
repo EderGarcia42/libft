@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:00:17 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 16:08:44 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:29:23 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <limits.h>
+# include <stddef.h>
 
 typedef struct s_list
 {
@@ -58,7 +59,6 @@ size_t	ft_strlcpy(char *dest, char const *src, size_t n);
 size_t	ft_strlen(const char *s);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-
 
 /* ************************************************************************** */
 /*                                 Listado                                    */

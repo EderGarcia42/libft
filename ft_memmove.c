@@ -6,30 +6,30 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:25:48 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 16:08:53 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:37:06 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*c_src;
-	char	*c_dst;
-	size_t	i;
+	unsigned char	*dst_cpy;
+	unsigned char	*src_cpy;
 
-	if (!dst && !src)
-		return (NULL);
-	c_src = (char *) src;
-	c_dst = (char *) dst;
-	i = 0;
-	if (c_dst > c_src)
-		while (len-- > 0)
-			c_dst[len] = c_src[len];
-	else
+	dst_cpy = (unsigned char *)dst;
+	src_cpy = (unsigned char *)src;
+	if (src_cpy > dst_cpy)
 	{
-		while (i++ < len)
-			c_dst[i] = c_src[i];
+		while (len--)
+			*dst_cpy++ = *src_cpy++;
+	}
+	if (dst_cpy > src_cpy)
+	{
+		dst_cpy += len - 1;
+		src_cpy += len - 1;
+		while (len--)
+			*dst_cpy-- = *src_cpy--;
 	}
 	return (dst);
 }

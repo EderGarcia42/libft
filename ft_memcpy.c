@@ -6,11 +6,11 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:29:41 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/10 16:08:54 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:25:01 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memcpy(void	*dest, void const *src, size_t n)
 {
