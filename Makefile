@@ -6,7 +6,7 @@
 #    By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 10:37:09 by edegarci          #+#    #+#              #
-#    Updated: 2024/04/15 12:35:35 by edegarci         ###   ########.fr        #
+#    Updated: 2024/04/15 16:41:13 by edegarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,11 @@ SRCS =	ft_atoi.c\
 		ft_toupper.c\
 		ft_bzero.c\
 		ft_calloc.c\
-		ft_strdup.c
+		ft_strdup.c\
+		ft_putchar_fd.c\
+		ft_putendl_fd.c\
+		ft_putnbr_fd.c\
+		ft_putstr_fd.c
 
 #		ft_malloc.c\
 		2_ft_itoa.c\
@@ -56,10 +60,6 @@ SRCS =	ft_atoi.c\
 		2_ft_lstmap.c\
 		2_ft_lstnew.c\
 		2_ft_lstsize.c\
-		2_ft_putchar_fd.c\
-		2_ft_putendl_fd.c\
-		2_ft_putnbr_fd.c\
-		2_ft_putstr_fd.c\
 		2_ft_substr.c\
 		2_ft_split.c\
 		2_ft_striteri.c\
