@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 11:47:14 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/12 12:24:56 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/04/15 10:37:36 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = 0;
 	return (ft_strlen(src));
 }
-
