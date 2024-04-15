@@ -6,7 +6,7 @@
 #    By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 10:37:09 by edegarci          #+#    #+#              #
-#    Updated: 2024/04/15 10:37:44 by edegarci         ###   ########.fr        #
+#    Updated: 2024/04/15 12:35:35 by edegarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,10 +40,12 @@ SRCS =	ft_atoi.c\
 		ft_strnstr.c\
 		ft_strrchr.c\
 		ft_tolower.c\
-		ft_toupper.c
+		ft_toupper.c\
+		ft_bzero.c\
+		ft_calloc.c\
+		ft_strdup.c
 
 #		ft_malloc.c\
-		ft_strdup.c\
 		2_ft_itoa.c\
 		2_ft_lstadd_back.c\
 		2_ft_lstadd_front.c\
@@ -73,14 +75,14 @@ OBJS = $(SRCS:.c=.o)
 
 # **************************************************************************** #
 # REGLAS                                                                       #
-# $(NAME) : $(OBJS): Esta regla indica que para crear la biblioteca (libft.a), #
-#           se necesitan los archivos objeto ($(OBJS)).                        #
+# $(NAME) : $(OBJS): Al crear la biblioteca (libft.a), se necesitan los 
+# 			archivos objeto ($(OBJS)).                        				   #
 #           La acción @ar crs $(NAME) $(OBJS) utiliza el comando ar para crear #
 #           un archivo de biblioteca estática (lib.a) con los archivos objeto  #
 #           especificados.                                                     #
 $(NAME) : $(OBJS)
 	@ar crs $(NAME) $(OBJS)
-# all: Esta regla es un alias para la regla $(NAME).                           #
+# all: Alias para la regla $(NAME).                           				   #
 #      Cuando se ejecuta make all, se crea la biblioteca.                      #
 all: $(NAME)
 # %.o : %.c: Esta regla indica cómo compilar cada archivo fuente (.c)          # 
@@ -90,23 +92,20 @@ all: $(NAME)
 #            fuente ($<) y generar el archivo objeto ($@).                     #
 %.o : %.c
 	@$(CC) $(CCFLAGS) -c -o $@ $<
-# clean: Esta regla elimina los archivos objeto (.o)                           #
-#        generados durante la compilación.                                     #
+# clean: Elimina los archivos objeto (.o) generados durante la compilación.	   #
 clean:
 	@$(RM) $(OBJS)
-# fclean: Esta regla elimina la biblioteca (libft.a)                           #
-#         y los archivos objeto (.o).                                          #
+# fclean: Elimina la biblioteca (libft.a) y los archivos objeto (.o).		   #
 fclean: clean
 	@rm -f $(NAME)
-# re: Esta regla es un alias para la secuencia fclean all.                     #
+# re: Alias para la secuencia fclean all.                     				   #
 #     Cuando se ejecuta make re, se limpia la compilación anterior             #
 #     y se crea la biblioteca nuevamente.                                      #
 re: fclean all
 # **************************************************************************** #
 
 # **************************************************************************** #
-# PSEUDO-OBJETIVOS                                                             #
-# PHONY: Indica que all, clean, fclean y re son pseudo-objetivos,              #
+# PHONY: all, clean, fclean y re son pseudo-objetivos,              #
 #        no archivos reales.                                                   #
 .PHONY: all clean fclean re
 # **************************************************************************** #
