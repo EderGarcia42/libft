@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/08 11:11:54 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:07 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/23 15:01:44 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:36 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

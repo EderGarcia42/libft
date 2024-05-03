@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/08 13:02:54 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:06 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/23 16:24:16 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:35 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -5,19 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/15 12:08:51 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:03 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/29 14:28:16 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:32 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *b, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*dest;
 	size_t			i;
 
-	dest = b;
+	dest = (unsigned char *)s;
 	i = 0;
 	while (i++ < n)
 		*dest++ = 0;

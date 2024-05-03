@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/08 13:14:56 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:07 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/23 17:18:12 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:37 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

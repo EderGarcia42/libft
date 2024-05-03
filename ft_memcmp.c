@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 14:30:32 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:09 by edegarci         ###   ########.fr       */
+/*   Created: 2024/05/02 11:56:33 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:38 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 int	ft_memcmp(void const *s1, void const *s2, size_t n)
 {
+	const unsigned char	*ptr_s1;
+	const unsigned char	*ptr_s2;
+
+	ptr_s1 = s1;
+	ptr_s2 = s2;
 	while (n--)
 	{
-		if (*(unsigned char *)s1 != *(unsigned char *)s2)
-			return (*(unsigned char *)s1 - *(unsigned char *)s2);
-		s1 = (unsigned char *)s1 + 1;
-		s2 = (unsigned char *)s2 + 1;
+		if (*ptr_s1 != *ptr_s2)
+			return ((int)(*ptr_s1 - *ptr_s2));
+		ptr_s1++;
+		ptr_s2++;
 	}
 	return (0);
 }

@@ -5,14 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/08 11:21:13 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:04 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/23 15:20:11 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:33 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
+	if ((c >= 'A' && c <= 'Z')
+		|| (c >= 'a' && c <= 'z')
 		|| (c >= '0' && c <= '9'))
 		return (1);
 	return (0);

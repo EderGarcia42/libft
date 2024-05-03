@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 16:01:12 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:34:58 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/23 17:50:11 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:44 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if ('A' <= c && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	else
 		return (c);

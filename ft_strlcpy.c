@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 11:47:14 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:34:54 by edegarci         ###   ########.fr       */
+/*   Created: 2024/04/24 16:46:57 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:42 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-	if (dstsize < 1)
+	if (dstsize == 0)
+	{
 		return (ft_strlen(src));
-	while (src[i] && i < dstsize - 1)
+	}
+	while (src[i] != '\0' && i < (dstsize - 1))
 	{
 		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = 0;
+	dst[i] = '\0';
 	return (ft_strlen(src));
 }

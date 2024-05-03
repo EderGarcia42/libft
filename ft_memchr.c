@@ -5,26 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 12:18:22 by edegarci          #+#    #+#             */
-/*   Updated: 2024/04/17 11:35:08 by edegarci         ###   ########.fr       */
+/*   Created: 2024/05/02 11:56:30 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/03 15:27:38 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
+#include <stddef.h>
+#include <stdlib.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*str;
-	size_t			i;
-	unsigned char	uc;
+	char	*str;
+	char	uc;
+	size_t	i;
 
-	str = (unsigned char *) s;
-	uc = (unsigned char) c;
+	str = (char *)s;
+	uc = (char)c;
 	i = 0;
 	while (i < n)
 	{
 		if (str[i] == uc)
-			return ((void *) &str[i]);
+			return ((void *)&str[i]);
 		i++;
 	}
 	return (NULL);
