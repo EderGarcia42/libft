@@ -6,7 +6,7 @@
 #    By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 10:37:09 by edegarci          #+#    #+#              #
-#    Updated: 2024/05/09 16:37:27 by edegarci         ###   ########.fr        #
+#    Updated: 2024/05/20 15:03:53 by edegarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ SRCS =	ft_atoi.c\
 		ft_strlcat.c\
 		ft_strlcpy.c\
 		ft_strlen.c\
+		ft_strmapi.c\
 		ft_strncmp.c\
 		ft_strnstr.c\
 		ft_strrchr.c\
@@ -49,6 +50,7 @@ SRCS =	ft_atoi.c\
 		ft_substr.c\
 		ft_tolower.c\
 		ft_toupper.c\
+		ft_split.c\
 
 OBJS = $(SRCS:.c=.o)
 

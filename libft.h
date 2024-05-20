@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:00:17 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:28 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/05/20 16:07:13 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <string.h>
 # include <limits.h>
 # include <stddef.h>
+# include <ctype.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -44,6 +45,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
@@ -51,5 +53,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	**ft_split(char const *s, char c);
 
 #endif
