@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:00:17 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/20 16:07:13 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/05/21 17:26:31 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,15 @@
 # include <limits.h>
 # include <stddef.h>
 # include <ctype.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -53,6 +62,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 
 #endif

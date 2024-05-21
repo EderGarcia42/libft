@@ -1,55 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 12:04:21 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/21 15:52:56 by edegarci         ###   ########.fr       */
+/*   Created: 2024/05/21 16:23:59 by edegarci          #+#    #+#             */
+/*   Updated: 2024/05/21 17:25:43 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_num_len(int n)
+int	ft_lstsize(t_list *lst)
 {
 	int	len;
 
 	len = 0;
-	if (n <= 0)
-		len = 1;
-	while (n)
+	while (lst)
 	{
-		n /= 10;
+		lst = lst -> next;
 		len++;
 	}
 	return (len);
 }
 
-char	*ft_itoa(int n)
+/* int main (int)
 {
-	long	i;
-	int		len;
-	char	*res;
+	t_list *node1 = ft_lstnew("a");
+	t_list *node2 = ft_lstnew("b");
+	t_list *node3 = ft_lstnew("c");
+	t_list *node4 = ft_lstnew("d");
+	t_list *node5 = ft_lstnew("e");
+	int len;
 
-	len = ft_num_len(n);
-	res = (char *)malloc(sizeof(char) * (len + 1));
-	i = n;
-	if (!res)
-		return (NULL);
-	res[len] = '\0';
-	if (i == 0)
-		res[0] = '0';
-	if (i < 0)
-	{
-		res[0] = '-';
-		i = -i;
-	}
-	while (i)
-	{
-		res[--len] = (i % 10) + '0';
-		i /= 10;
-	}
-	return (res);
-}
+	node1 -> next = node2;
+	node2 -> next = node3;
+	node3 -> next = node4;
+	node4 -> next = node5;
+	node5 -> next = NULL;
+
+	len = ft_lstsize(node1);
+
+	printf("cantidad de nodos: %d\n", len);
+	return(0);
+} */
