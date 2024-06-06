@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 17:50:11 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:29 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 16:06:54 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,33 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+
+/* Una letra */
+/* int	main(void)
+{
+	int		c;
+	char	letra;
+
+	letra = 'a';
+	c = ft_toupper(letra);
+	printf("En mayúscula es: %c\n", c);
+	return (0);
+} */
+/* Una palabra */
+/* void convertir(char *word)
+{
+	while (*word)
+	{
+		*word = ft_toupper(*word);
+		word++;
+	}
+} */
+/* Argumentos */
+/* int main(void)
+{
+	char	word[] = "hola";
+
+	convertir(word);
+	printf("En mayúsculas es: %s\n", word);
+	return (0);
+} */

@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 12:10:33 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:34 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:59:53 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,29 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
+
+/* int	main(void)
+{
+	char	*str;
+
+	str = "Let's go!";
+	printf("El número de carácteres es: %zu\n", ft_strlen(str));
+	return (0);
+} */
+/* int	main(int argc, char **argv)
+{
+	char	*s;
+	size_t	len;
+
+	if (argc != 2)
+	{
+		printf("Error en número de argumentos");
+		return (0);
+	}
+	s = argv[1];
+	len = ft_strlen(s);
+	printf("%zu\n", len);
+	len = strlen(s);
+	printf("%zu\n", len);
+	return (0);
+} */

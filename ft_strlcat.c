@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:40:48 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:35 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:59:54 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
+
+/* int	main(void)
+{
+	char	dst[20] = "Prueba";
+	char	src[20] = "Strlcat";
+	size_t	dstsize = 20;
+	size_t	i = ft_strlcat(dst, src, dstsize);
+	printf("%s\n", dst);
+	printf("%zu\n", i);
+	return (0);
+} */

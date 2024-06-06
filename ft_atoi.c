@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 16:01:25 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/21 15:52:48 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:39:55 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,25 @@ int	ft_atoi(const char *str)
 	}
 	return (num);
 }
+/* int	main(void)
+{
+	char	*str = "  -1234";
+	printf("El numero en formato entero es: %d\n", ft_atoi(str));
+	return (0);
+} */
+/* int	main(int argc, char **argv)
+{
+	int	num;
+	int	other_num;
+
+	if (argc != 3)
+	{
+		printf("Error de argumentos\n");
+		return (0);
+	}
+	num = ft_atoi(argv[1]);
+	other_num = ft_atoi(argv[2]);
+	printf("El primer numero en formato entero es: %d\n", num);
+	printf("El segundo numero en formato entero es: %d\n", other_num);
+	return (0);
+} */

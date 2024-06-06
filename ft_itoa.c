@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:04:21 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/21 15:52:56 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:39:36 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,24 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
+
+/* int main(void)
+{
+	int n = 'A';
+	char *str = ft_itoa(n);
+	printf("El numero %d en forma de str = %s\n", n, str);
+	free(str);
+	return 0;
+} */
+/* int main(int argc, char **argv)
+{
+	char *str;
+
+	if (argc == 2)
+	{
+		str = ft_itoa(atoi(argv[1]));
+		printf("El numero %d en forma de str =%s\n", atoi(argv[1]), str);
+		free(str);
+	}
+	return (0);
+} */

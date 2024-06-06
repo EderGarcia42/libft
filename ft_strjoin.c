@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:47:42 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:36 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:59:55 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[i + j] = '\0';
 	return (res);
 }
+
+/* int main(void)
+{
+	char *s1 = "Juntar ";
+	char *s2 = "Palabra";
+	char *res = ft_strjoin(s1, s2);
+	printf("%s\n", res);
+	free(res);
+	return (0);
+} */

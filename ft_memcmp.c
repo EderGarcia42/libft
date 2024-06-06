@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 11:56:33 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:47 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:48:28 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,35 @@ int	ft_memcmp(void const *s1, void const *s2, size_t n)
 	}
 	return (0);
 }
+
+/* int	main(void)
+{
+	char	s1[] = "ABC";
+	char	s2[] = "ABC";
+	size_t	len;
+
+	len = 3;
+	printf("%d\n", ft_memcmp(s1, s2, len));
+	return (0);
+} */
+/* int	main(int argc, char **argv)
+{
+	char	*s1;
+	char	*s2;
+	size_t	len;
+	int		i;
+
+	if (argc != 3)
+	{
+		printf("Error de argumentos\n");
+		return (0);
+	}
+	s1 = argv[1];
+	s2 = argv[2];
+	len = ft_strlen(s1);
+	i = ft_memcmp(s1, s2, len);
+	printf("ft_memcmp %s %s %zu %d\n", s1, s2, len, i);
+	i = memcmp(s1, s2, len);
+	printf("memcmp %s %s %zu %d\n", s1, s2, len, i);
+	return (0);
+} */

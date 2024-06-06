@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 14:28:09 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:40 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 16:08:46 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,30 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	write(fd, &s[n % 10], 1);
 }
+
+/* int main(void)
+{
+	int	n;
+	int	i;
+
+	i = 1;
+	n = 42;
+	ft_putnbr_fd(n, i);
+	return (0);
+} */
+/* Argumentos */
+/* int main(int argc, char **argv)
+{
+	int	n;
+	int	i;
+
+	if (argc != 3)
+	{
+		printf("Error de argumentos\n");
+		return (0);
+	}
+	i = ft_atoi(argv[2]);
+	n = ft_atoi(argv[1]);
+	ft_putnbr_fd(n, i);
+	return (0);
+} */

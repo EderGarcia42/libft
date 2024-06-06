@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:11:42 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:32 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 16:01:07 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+/* int main(void)
+{
+	char *haystack = "Probando ejercicio";
+	char *needle = "ejercicio";
+	char *res = ft_strnstr(haystack, needle, 10);
+	printf("%s\n", res);
+	return (0);
+} */

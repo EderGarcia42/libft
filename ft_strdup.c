@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 12:07:02 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:37 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:59:57 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,13 @@ char	*ft_strdup(const char *s1)
 	copy[i] = '\0';
 	return (copy);
 }
+
+/* int main(void)
+{
+	char *str = "Prueba";
+	char *copy = ft_strdup(str);
+	printf("Original: %s\n", str);
+	printf("Copy: %s\n", copy);
+	free(copy);
+	return (0);
+} */

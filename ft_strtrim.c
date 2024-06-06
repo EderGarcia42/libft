@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:47:33 by edegarci          #+#    #+#             */
-/*   Updated: 2024/05/09 16:37:31 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 16:04:46 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, start, end - start);
 	return (str);
 }
+
+/* int	main(void)
+{
+	const char	*s1 = "   PRueba de cadena  ";
+	const char	*set = " ";
+	char		*trimmed_str = ft_strtrim(s1, set);
+	if (trimmed_str == NULL)
+	{
+		printf("Error: no se pudo recortar la cadena\n");
+		return (1);
+	}
+	printf("Cadena original: \"%s\"\n", s1);
+	printf("Cadena recortada: \"%s\"\n", trimmed_str);
+	free(trimmed_str);
+	return (0);
+} */
