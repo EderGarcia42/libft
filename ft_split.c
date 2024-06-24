@@ -6,23 +6,12 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 15:37:58 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/10 15:40:17 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/12 12:19:16 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* 	
-Divide una cadena en subcadenas basadas en un delimitador específico, 
-manejando la memoria adecuadamente y liberándola en caso de errores. 
-*/
-
-/* 
-Contar cuántas palabras hay en s separadas por c.
-1)	Recorre la cadena s carácter por carácter usando un puntero.
-2)	Cada vez que encuentra un carácter que no es c, incrementa el contador 
-	de palabras count y avanza hasta encontrar c o el final de la cadena. 
-*/
 static size_t	count_words(char const *s, char c)
 {
 	size_t	count;
@@ -42,10 +31,6 @@ static size_t	count_words(char const *s, char c)
 	return (count);
 }
 
-/* 
-Obtener la longitud de una palabra desde un punto específico en s.
-1)	Cuenta cuántos caracteres hay hasta encontrar c o el final de la cadena. 
-*/
 static size_t	get_word_len(char const *s, char c)
 {
 	size_t	len;
@@ -59,10 +44,6 @@ static size_t	get_word_len(char const *s, char c)
 	return (len);
 }
 
-/* 
-Liberar la memoria de un array de cadenas en caso de error.
-1) Libera cada subcadena y luego libera el array. 
-*/
 static void	free_array(char **array, size_t count)
 {
 	while (count > 0)
@@ -73,12 +54,6 @@ static void	free_array(char **array, size_t count)
 	free(array);
 }
 
-/*     
-Dividir s en subcadenas y almacenarlas en array.
-1)	Recorre s y cuando encuentra una palabra, la copia en array usando ft_substr.
-2)	Si falla la asignación de memoria, libera todo el array y retorna NULL.
-3)	Al final, asegura que el último elemento del array sea NULL.
-*/
 static char	**split(char const *s, char c, char **array, size_t words_count)
 {
 	size_t	i;
@@ -104,13 +79,6 @@ static char	**split(char const *s, char c, char **array, size_t words_count)
 	return (array);
 }
 
-/* 
-Función principal que coordina todo el proceso.
-1)	Verifica si s es NULL.
-2)	Cuenta las palabras en s usando count_words.
-3)	Reserva memoria para array con malloc.
-4)	Llama a split para llenar array con las subcadenas.
-5)	Retorna array. */
 char	**ft_split(char const *s, char c)
 {
 	char	**array;
@@ -151,6 +119,5 @@ char	**ft_split(char const *s, char c)
 
 	return (0);
 } */
-/* COMPILAR */
 /* gcc -o ft_split_test ft_split.c -L. -lft */
 /* ./ft_split_test */
