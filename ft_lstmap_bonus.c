@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 14:11:16 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/12 12:19:06 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/24 13:52:29 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	node1 -> next = node2;
 	node2 -> next = node3;
 
-	new = ft_lstmap(node1, &ft_strdup, &free);
+	new = ft_lstmap(node1, (void *(*)(void *))&ft_strdup, &free);
 
 	while (new)
 	{

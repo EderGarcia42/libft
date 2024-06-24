@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 12:10:33 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/24 13:01:09 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/24 14:01:21 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	while (s != 0 && s[len])
+	while (s[len])
 		len++;
 	return (len);
 }
